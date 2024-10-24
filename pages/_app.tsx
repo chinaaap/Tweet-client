@@ -1,4 +1,4 @@
-import NavBar from "@/components/Navbar";
+import NavBar from "@/pages/Navbar/Navbar";
 import { AuthProvider } from "@/context/auth";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
