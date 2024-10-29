@@ -15,9 +15,8 @@ const Login = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // console.log(name, email, password);
-        //新規登録を行うAPIを叩く
 
+        //新規登録を行うAPIを叩く
         try {
             const response = await apiClient.post("/auth/login", {
                 email,
@@ -25,7 +24,6 @@ const Login = () => {
             });
 
             const token = response.data.token;
-            console.log(token);
 
             login(token);
 

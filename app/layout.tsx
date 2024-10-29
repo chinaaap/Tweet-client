@@ -8,13 +8,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <AuthProvider>
+    <AuthProvider>
+      <html lang="ja">
         <body>
           <NavBar />
           {children}
         </body>
-      </AuthProvider>
-    </html>
+      </html>
+    </AuthProvider>
   );
 }
